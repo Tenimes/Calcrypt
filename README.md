@@ -61,4 +61,4 @@ Welcome to Calcrypt. Calcrypt encrypts and decrypts using the calendar.
 This is my first individual project and I want to turn it into a library. I would like to thank you in advance if you point out any mistakes of me or something
 you would like to suggest.
 
-And sorry for bad grammar, I used google translate and I noticed the words are not correct words but couldn't fine better.
+And sorry for bad grammar, I used google translate and I noticed the words are not correct words but couldn't find better.
