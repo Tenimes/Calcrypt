@@ -3,7 +3,7 @@ An encryption method
 
 Welcome to Calcrypt. Calcrypt encrypts and decrypts using the calendar.
 
-# Userguide:
+# Info
   1.0 calcrypt and calcryptWinfo Classes
       calcrypt Class is the main code, calcryptWinfo is the same class, with print lines for getting info.
     1.1 __init__()
