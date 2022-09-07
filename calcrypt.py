@@ -4,34 +4,34 @@ from random import *
 months = [1, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
 alphabet = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'ı', 'i', 'j', 'k', 'l', 'm', 'n',
             'o', 'p', 'r', 's', 't', 'u', 'v', 'y', 'z', 'q', 'x', 'w', ' ']
-encrypted_list = ([[0, 1, 1, 0], [1, 0, 0, 1], [1, 1, 1, 1], [1, 0, 0, 1]],
-                  [[1, 0, 0], [1, 1, 0], [1, 0, 1], [1, 1, 0]],
-                  [[0, 1, 1], [1, 0, 0], [1, 0, 0], [0, 1, 1]],
-                  [[1, 1, 0], [1, 0, 1], [1, 0, 1], [1, 1, 0]],
-                  [[0, 1, 1, 0], [1, 1, 1, 1], [1, 0, 0, 0], [0, 1, 1, 1]],
-                  [[1, 1, 1], [1, 0, 0], [1, 1, 0], [1, 0, 0]],
-                  [[1, 1, 1], [1, 1, 0], [1, 0, 1], [1, 1, 1]],
-                  [[1, 0, 1], [1, 1, 1], [1, 0, 1]],
-                  [[1], [1], [1], [1]],
-                  [[1], [1], [1]],
-                  [[0, 1], [0, 1], [1, 1]],
-                  [[1, 0, 1], [1, 1, 0], [1, 1, 0], [1, 0, 1]],
-                  [[1, 0], [1, 0], [1, 1]],
-                  [[0, 1, 0, 1, 0], [1, 0, 1, 0, 1], [1, 0, 0, 0, 1]],
-                  [[1, 0, 0, 1], [1, 1, 0, 1], [1, 0, 1, 1], [1, 0, 0, 1]],
-                  [[1, 1, 1], [1, 0, 1], [1, 1, 1]],
-                  [[1, 1, 0], [1, 0, 1], [1, 1, 0], [1, 0, 0]],
-                  [[1, 1, 0], [1, 0, 1], [1, 1, 0], [1, 0, 1]],
-                  [[0, 1, 0], [1, 0, 1], [0, 0, 1], [0, 1, 0]],
-                  [[1, 1, 1], [0, 1, 0], [0, 1, 0]],
-                  [[1, 0, 1], [1, 0, 1], [1, 1, 1]],
-                  [[1, 0, 1], [1, 0, 1], [0, 1, 0]],
-                  [[1, 0, 1], [0, 1, 0], [0, 1, 0]],
-                  [[1, 1, 1], [0, 0, 1], [0, 1, 0], [1, 1, 1]],
-                  [[1, 1, 1], [1, 0, 1], [1, 1, 1], [0, 0, 1]],
-                  [[1, 0, 0, 0, 1], [1, 0, 1, 0, 1], [0, 1, 0, 1, 0]],
-                  [[1, 0, 1], [0, 1, 0], [1, 0, 1]],
-                  [[0, 1, 0], [1, 0, 1], [0, 1, 0]])
+encrypted_alphabet = ([[0, 1, 1, 0], [1, 0, 0, 1], [1, 1, 1, 1], [1, 0, 0, 1]],
+                      [[1, 0, 0], [1, 1, 0], [1, 0, 1], [1, 1, 0]],
+                      [[0, 1, 1], [1, 0, 0], [1, 0, 0], [0, 1, 1]],
+                      [[1, 1, 0], [1, 0, 1], [1, 0, 1], [1, 1, 0]],
+                      [[0, 1, 1, 0], [1, 1, 1, 1], [1, 0, 0, 0], [0, 1, 1, 1]],
+                      [[1, 1, 1], [1, 0, 0], [1, 1, 0], [1, 0, 0]],
+                      [[1, 1, 1], [1, 1, 0], [1, 0, 1], [1, 1, 1]],
+                      [[1, 0, 1], [1, 1, 1], [1, 0, 1]],
+                      [[1], [1], [1], [1]],
+                      [[1], [1], [1]],
+                      [[0, 1], [0, 1], [1, 1]],
+                      [[1, 0, 1], [1, 1, 0], [1, 1, 0], [1, 0, 1]],
+                      [[1, 0], [1, 0], [1, 1]],
+                      [[0, 1, 0, 1, 0], [1, 0, 1, 0, 1], [1, 0, 0, 0, 1]],
+                      [[1, 0, 0, 1], [1, 1, 0, 1], [1, 0, 1, 1], [1, 0, 0, 1]],
+                      [[1, 1, 1], [1, 0, 1], [1, 1, 1]],
+                      [[1, 1, 0], [1, 0, 1], [1, 1, 0], [1, 0, 0]],
+                      [[1, 1, 0], [1, 0, 1], [1, 1, 0], [1, 0, 1]],
+                      [[0, 1, 0], [1, 0, 1], [0, 0, 1], [0, 1, 0]],
+                      [[1, 1, 1], [0, 1, 0], [0, 1, 0]],
+                      [[1, 0, 1], [1, 0, 1], [1, 1, 1]],
+                      [[1, 0, 1], [1, 0, 1], [0, 1, 0]],
+                      [[1, 0, 1], [0, 1, 0], [0, 1, 0]],
+                      [[1, 1, 1], [0, 0, 1], [0, 1, 0], [1, 1, 1]],
+                      [[1, 1, 1], [1, 0, 1], [1, 1, 1], [0, 0, 1]],
+                      [[1, 0, 0, 0, 1], [1, 0, 1, 0, 1], [0, 1, 0, 1, 0]],
+                      [[1, 0, 1], [0, 1, 0], [1, 0, 1]],
+                      [[0, 1, 0], [1, 0, 1], [0, 1, 0]])
 
 
 class calcrypt:
@@ -83,8 +83,8 @@ class calcrypt:
             else:
                 raise NameError(
                     "Undefined character! Please do not use special characters.")
-            self.column = len(encrypted_list[self.index][0])
-            self.row = len(encrypted_list[self.index])
+            self.column = len(encrypted_alphabet[self.index][0])
+            self.row = len(encrypted_alphabet[self.index])
             self.encrypted_letter_str = ""
             self.random_row = randrange(len(self.calendar)+1-self.row)
             self.loop = True
@@ -97,7 +97,7 @@ class calcrypt:
                         self.random_column = 0
                     for r in range(self.row):
                         for c in range(self.column):
-                            if encrypted_list[self.index][r][c] == 1:
+                            if encrypted_alphabet[self.index][r][c] == 1:
                                 if r > 0:
                                     self.encrypted_letter.append(
                                         self.calendar[r][c+self.random_column+(7-len(self.calendar[0]))])
@@ -109,7 +109,7 @@ class calcrypt:
                     self.random_column = randrange(7-self.column)
                     for r in range(self.row):
                         for c in range(self.column):
-                            if encrypted_list[self.index][r][c] == 1:
+                            if encrypted_alphabet[self.index][r][c] == 1:
                                 self.encrypted_letter.append(
                                     self.calendar[r+1][c+self.random_column])
                                 self.loop = False
@@ -121,7 +121,7 @@ class calcrypt:
                         self.random_column = 0
                     for r in range(self.row):
                         for c in range(self.column):
-                            if encrypted_list[self.index][r][c] == 1:
+                            if encrypted_alphabet[self.index][r][c] == 1:
                                 self.encrypted_letter.append(
                                     self.calendar[r+self.random_row][c+self.random_column])
                                 self.loop = False
@@ -219,8 +219,9 @@ class calcrypt:
                 if not self.decrypted_list == []:
                     self.decrypted_letter_list.append(self.decrypted_list)
                     self.decrypted_list = []
-            if self.decrypted_letter_list in encrypted_list:
-                self.dIndex = encrypted_list.index(self.decrypted_letter_list)
+            if self.decrypted_letter_list in encrypted_alphabet:
+                self.dIndex = encrypted_alphabet.index(
+                    self.decrypted_letter_list)
             else:
                 raise RuntimeError(
                     "An error occurs while decrypting the code. Check your alphabet and encrypted alphabet or key.")
@@ -281,8 +282,9 @@ class calcrypt:
                 if not self.decrypted_list == []:
                     self.decrypted_letter_list.append(self.decrypted_list)
                     self.decrypted_list = []
-            if self.decrypted_letter_list in encrypted_list:
-                self.dIndex = encrypted_list.index(self.decrypted_letter_list)
+            if self.decrypted_letter_list in encrypted_alphabet:
+                self.dIndex = encrypted_alphabet.index(
+                    self.decrypted_letter_list)
             else:
                 raise RuntimeError(
                     "An error occurs while decrypting the code. Check your alphabet and encrypted alphabet or key.")
@@ -340,8 +342,8 @@ class calcryptWinfo:
             else:
                 raise NameError(
                     "Undefined character! Please do not use special characters.")
-            self.column = len(encrypted_list[self.index][0])
-            self.row = len(encrypted_list[self.index])
+            self.column = len(encrypted_alphabet[self.index][0])
+            self.row = len(encrypted_alphabet[self.index])
             self.encrypted_letter_str = ""
             self.random_row = randrange(len(self.calendar)+1-self.row)
             print(self.calendar)
@@ -357,7 +359,7 @@ class calcryptWinfo:
                         self.random_column = 0
                     for r in range(self.row):
                         for c in range(self.column):
-                            if encrypted_list[self.index][r][c] == 1:
+                            if encrypted_alphabet[self.index][r][c] == 1:
                                 if r > 0:
                                     self.encrypted_letter.append(
                                         self.calendar[r][c+self.random_column+(7-len(self.calendar[0]))])
@@ -372,7 +374,7 @@ class calcryptWinfo:
                     self.random_column = randrange(7-self.column)
                     for r in range(self.row):
                         for c in range(self.column):
-                            if encrypted_list[self.index][r][c] == 1:
+                            if encrypted_alphabet[self.index][r][c] == 1:
                                 self.encrypted_letter.append(
                                     self.calendar[r+1][c+self.random_column])
                                 print(
@@ -387,7 +389,7 @@ class calcryptWinfo:
                         self.random_column = 0
                     for r in range(self.row):
                         for c in range(self.column):
-                            if encrypted_list[self.index][r][c] == 1:
+                            if encrypted_alphabet[self.index][r][c] == 1:
                                 self.encrypted_letter.append(
                                     self.calendar[r+self.random_row][c+self.random_column])
                                 print(
@@ -498,8 +500,9 @@ class calcryptWinfo:
             print(self.decrypted_list)
             print("decrypted letter list:", end='')
             print(self.decrypted_letter_list)
-            if self.decrypted_letter_list in encrypted_list:
-                self.dIndex = encrypted_list.index(self.decrypted_letter_list)
+            if self.decrypted_letter_list in encrypted_alphabet:
+                self.dIndex = encrypted_alphabet.index(
+                    self.decrypted_letter_list)
             else:
                 raise RuntimeError(
                     "An error occurs while decrypting the code. Check your alphabet and encrypted alphabet or key.")
@@ -572,8 +575,9 @@ class calcryptWinfo:
             print(self.decrypted_list)
             print("decrypted letter list:", end='')
             print(self.decrypted_letter_list)
-            if self.decrypted_letter_list in encrypted_list:
-                self.dIndex = encrypted_list.index(self.decrypted_letter_list)
+            if self.decrypted_letter_list in encrypted_alphabet:
+                self.dIndex = encrypted_alphabet.index(
+                    self.decrypted_letter_list)
             else:
                 raise RuntimeError(
                     "An error occurs while decrypting the code. Check your alphabet and encrypted alphabet or key.")
